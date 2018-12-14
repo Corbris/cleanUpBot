@@ -1,3 +1,4 @@
+//0.01 
 const Discord = require("discord.js");
 var auth = require('./auth.json');
 const bot = new Discord.Client();
@@ -15,8 +16,7 @@ bot.on("message", (message) => {
 	
     const args = message.content.slice(1).trim().split(/ +/g);
     const cmd = args.shift();
-	console.log(cmd + ' ' + args);
-	
+
 	switch(cmd) 
 	{
 		case 'cleanUp':
